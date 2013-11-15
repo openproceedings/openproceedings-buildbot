@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import logging as l
+#l.root.level = l.DEBUG
 
 AUTHOR = u'Andrea Zonca'
 SITENAME = u'OpenProceedings'
@@ -29,3 +31,6 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = True
 
 THEME = "themes/pelican-bootstrap3"
+
+PLUGIN_PATH = "plugins"
+PLUGINS = ["pdf"]
