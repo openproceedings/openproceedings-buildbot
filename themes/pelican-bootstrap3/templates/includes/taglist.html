@@ -1,4 +1,5 @@
 {% if article.tags %}
+&nbsp;
 <span class="label label-default">Tags</span>
 {% for tag in article.tags %}
 	<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>

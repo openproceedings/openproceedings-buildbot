@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import logging as l
-#l.root.level = l.DEBUG
 
 AUTHOR = u'Andrea Zonca'
 SITENAME = u'OpenProceedings'
@@ -15,7 +13,9 @@ DEFAULT_LANG = u'en'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+DISPLAY_CATEGORIES_ON_MENU=False
 TRANSLATION_FEED_ATOM = None
+PDF_PROCESSOR=True
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -24,8 +24,9 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+#SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
+SOCIAL = None
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
