@@ -19,6 +19,13 @@
         </span>
     {% endif %}
 
+    {% if BIBTEX_PROCESSOR %}
+        &nbsp;
+        <span class="label label-default">
+            <a href="{{ SITEURL }}/bib/{{ article.slug }}.bib">BibTex</a>
+        </span>
+    {% endif %}
+
     {% include 'includes/taglist.html' %}
     {% include 'includes/translations.html' %}
 </footer><!-- /.post-info -->
