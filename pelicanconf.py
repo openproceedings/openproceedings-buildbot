@@ -6,7 +6,7 @@ AUTHOR = u'Andrea Zonca'
 SITENAME = u'OpenProceedings'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
@@ -16,6 +16,7 @@ CATEGORY_FEED_ATOM = None
 DISPLAY_CATEGORIES_ON_MENU=False
 TRANSLATION_FEED_ATOM = None
 PDF_PROCESSOR=True
+BIBTEX_PROCESSOR=True
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -35,3 +36,9 @@ THEME = "themes/pelican-bootstrap3"
 
 PLUGIN_PATH = "plugins"
 PLUGINS = ["pdf"]
+
+FIGSHARE_CLIENT_KEY = '8BeN60jNpgmgIN6G8oaCXQ'
+FIGSHARE_CLIENT_SECRET = 'oSj6EZkWChEifWOADJcKUw'
+FIGSHARE_TOKEN_KEY = 'sZegoc5oOgPsXfeATZGvRggVLkqc9lrYFCI9pYvDWkZAsZegoc5oOgPsXfeATZGvRg'
+FIGSHARE_TOKEN_SECRET = 'fifOafUWFAFcKxN6ZO9fbg'
+FIGSHARE_CATEGORY_ID = 77 #applied computer science
