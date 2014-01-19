@@ -2,7 +2,7 @@
 BRANCH=master
 TARGET_REPO=openproceedings/openproceedings.github.io.git
 # if target folder is not a single folder, change the rsync command
-TARGET_FOLDER=2013
+TARGET_FOLDER=$1
 PELICAN_OUTPUT_FOLDER=output
 
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
