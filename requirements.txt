@@ -4,3 +4,4 @@ fabric
 requests
 requests_oauthlib
 rst2pdf
+PIL
