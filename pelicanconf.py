@@ -35,7 +35,10 @@ RELATIVE_URLS = True
 THEME = "themes/pelican-bootstrap3"
 
 PLUGIN_PATH = "plugins"
-PLUGINS = ["pdf", "figshare_pdf"]
+import sys
+sys.path.append(".")
+import figshare_pdf 
+PLUGINS = ["pdf", figshare_pdf]
 
 FIGSHARE_CLIENT_KEY = '8BeN60jNpgmgIN6G8oaCXQ'
 FIGSHARE_CLIENT_SECRET = 'oSj6EZkWChEifWOADJcKUw'
