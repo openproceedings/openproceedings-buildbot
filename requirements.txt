@@ -2,3 +2,4 @@ pelican
 Markdown
 fabric
 requests
+requests_oauthlib
