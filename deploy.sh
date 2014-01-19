@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
 BRANCH=master
 TARGET_REPO=openproceedings/openproceedings.github.io.git
 # if target folder is not a single folder, change the rsync command
