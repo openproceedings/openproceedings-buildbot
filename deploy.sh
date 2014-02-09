@@ -2,7 +2,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 BRANCH=master
-TARGET_REPO=openproceedings/openproceedings.github.io.git
+TARGET_REPO=openproceedings/openproceedings.github.io
 # if target folder is not a single folder, change the rsync command
 TARGET_FOLDER=$1
 PELICAN_OUTPUT_FOLDER=output
@@ -14,7 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         git config --global user.name "Travis"
     fi
     #using token clone gh-pages branch
-    git clone --quiet --branch=$BRANCH https://${GH_TOKEN}@github.com/$TARGET_REPO built_website > /dev/null
+    git clone --quiet --branch=$BRANCH https://${GH_TOKEN}@github.com/$TARGET_REPO.git built_website > /dev/null
     #go into directory and copy data we're interested in to that directory
     cd built_website/$TARGET_FOLDER
     rsync -rv --exclude=.git  ../../$PELICAN_OUTPUT_FOLDER/* .
