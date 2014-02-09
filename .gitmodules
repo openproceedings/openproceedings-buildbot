@@ -1,6 +1,6 @@
 [submodule "plugins"]
 	path = plugins
-	url = https://github.com/getpelican/pelican-plugins.git
+	url = https://github.com/openproceedings/pelican-plugins.git
 [submodule "figshare_pdf"]
 	path = figshare_pdf
 	url = https://github.com/openproceedings/pelican_figshare_pdf.git
