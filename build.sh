@@ -2,7 +2,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 REPOSITORY_NAME=$1
-git clone --depth 1 https://github.com/openproceedings/$REPOSITORY_NAME.git content
+git clone --quiet https://${GH_TOKEN_CONTENT}@github.com/$REPOSITORY_NAME.git content > /dev/null
 ln -s content/images images
 ls images/
 make html
