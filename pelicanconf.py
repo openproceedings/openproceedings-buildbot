@@ -45,3 +45,14 @@ FIGSHARE_CLIENT_SECRET = 'oSj6EZkWChEifWOADJcKUw'
 FIGSHARE_TOKEN_KEY = 'sZegoc5oOgPsXfeATZGvRggVLkqc9lrYFCI9pYvDWkZAsZegoc5oOgPsXfeATZGvRg'
 FIGSHARE_TOKEN_SECRET = 'fifOafUWFAFcKxN6ZO9fbg'
 FIGSHARE_CATEGORY_ID = 77 #applied computer science
+
+FIGSHARE_BIBTEX_TEMPLATE = """@InProceedings{ %(tag)s-openproc-2013,
+  author    = { %(authors)s },
+  title     = { %(title)s },
+  booktitle = { Test Proceedings for OpenProceedings },
+  year      = { 2013 },
+  editor    = { Andrea Zonca },
+  doi    = { %(doi)s },
+  url    = { %(url)s }
+}
+"""
