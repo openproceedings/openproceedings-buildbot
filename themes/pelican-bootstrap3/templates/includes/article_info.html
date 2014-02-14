@@ -26,6 +26,13 @@
         </span>
     {% endif %}
 
+    {% if article.doi %}
+        &nbsp;
+        <span class="label label-default">
+            <a href="{{ article.doi }}">FigShare</a>
+        </span>
+    {% endif %}
+
     {% include 'includes/taglist.html' %}
     {% include 'includes/translations.html' %}
 </footer><!-- /.post-info -->
