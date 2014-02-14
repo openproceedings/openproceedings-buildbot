@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Andrea Zonca'
 SITENAME = u'OpenProceedings'
@@ -18,15 +19,6 @@ TRANSLATION_FEED_ATOM = None
 PDF_PROCESSOR=True
 BIBTEX_PROCESSOR=True
 
-# Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
-
-# Social widget
-#SOCIAL = (('You can add links in your config file', '#'),
-#          ('Another social link', '#'),)
 SOCIAL = None
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -40,10 +32,10 @@ sys.path.append(".")
 import figshare_pdf 
 PLUGINS = ["pdf", figshare_pdf]
 
-FIGSHARE_CLIENT_KEY = '8BeN60jNpgmgIN6G8oaCXQ'
-FIGSHARE_CLIENT_SECRET = 'oSj6EZkWChEifWOADJcKUw'
-FIGSHARE_TOKEN_KEY = 'sZegoc5oOgPsXfeATZGvRggVLkqc9lrYFCI9pYvDWkZAsZegoc5oOgPsXfeATZGvRg'
-FIGSHARE_TOKEN_SECRET = 'fifOafUWFAFcKxN6ZO9fbg'
+FIGSHARE_CLIENT_KEY = '541lmG0dcTUK0sjCWquPog'
+FIGSHARE_CLIENT_SECRET = os.environ["FIGSHARE_CLIENT_SECRET"]
+FIGSHARE_TOKEN_KEY = 'v7RkXTnx2bIbhuNR3pvc0wPMDbv7CxteYwMgdbJe05kAv7RkXTnx2bIbhuNR3pvc0w'
+FIGSHARE_TOKEN_SECRET = os.environ["FIGSHARE_TOKEN_SECRET"]
 FIGSHARE_CATEGORY_ID = 77 #applied computer science
 
 FIGSHARE_BIBTEX_TEMPLATE = """@InProceedings{ %(tag)s-openproc-2013,
