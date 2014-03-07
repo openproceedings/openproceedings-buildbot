@@ -2,7 +2,9 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 BRANCH=master
-TARGET_REPO=openproceedings/openproceedings.github.io
+TRAVIS_REPO_SLUG_ARRAY=(${TRAVIS_REPO_SLUG//\// })
+GITHUB_ORGANIZATION=${TRAVIS_REPO_SLUG_ARRAY[0]}
+TARGET_REPO=$GITHUB_ORGANIZATION/$GITHUB_ORGANIZATION.github.io
 # if target folder is not a single folder, change the rsync command
 TARGET_FOLDER=$1
 PELICAN_OUTPUT_FOLDER=output
